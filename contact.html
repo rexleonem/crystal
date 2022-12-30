@@ -16,8 +16,110 @@
 <link href="css/styles.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&amp;subset=latin-ext,vietnamese"
     rel="stylesheet" crossorigin="anonymous">
+<style>
+.tele-float {
+    margin-top: 50px;
+    position: fixed;
+    transform:translate(108px,0px);
+    top:25%;
+    right:0;
+    width:150px;
+    overflow: hidden;
+    background-color: #5f71c0;
+    color: #FFF;
+    border-radius: 2px 0 0 2px;
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+    vertical-align: middle
+}
+.tele-float a span {
+    color: white;
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    position: absolute;
+    line-height: 16px;
+    font-weight: bolder;
+}
+
+.tele-float i {
+    font-size: 30px;
+    color: white;
+    line-height: 30px;
+    padding: 10px;
+    transform:rotate(0deg);
+    transition: all 0.5s ease-in-out;
+    text-align:center;
+
+}
+
+.tele-float:hover {
+    color: #FFFFFF;
+    transform:translate(0px,0px);
+}
+
+.tele-float:hover i  {
+    transform:rotate(360deg);
+}
+
+.whats-float {
+    position: fixed;
+    transform:translate(108px,0px);
+    top:25%;
+    right:0;
+    width:150px;
+    overflow: hidden;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 2px 0 0 2px;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+    vertical-align: middle
+}
+.whats-float a span {
+    color: white;
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    position: absolute;
+    line-height: 16px;
+    font-weight: bolder;
+}
+
+.whats-float i {
+    font-size: 30px;
+    color: white;
+    line-height: 30px;
+    padding: 10px;
+    transform:rotate(0deg);
+    transition: all 0.5s ease-in-out;
+    text-align:center;
+
+}
+
+.whats-float:hover {
+    color: #FFFFFF;
+    transform:translate(0px,0px);
+}
+
+.whats-float:hover i  {
+    transform:rotate(360deg);
+}
+    </style>
 </head>
 <body>
+<div class="whats-float">
+    <a href=""
+       target="_blank">
+        <i class="fa fa-whatsapp"></i><span>WhatsApp<br><small>+2349049475905</small></span>
+    </a>
+</div>
+<div class="tele-float">
+    <a href=""
+       target="_blank">
+        <i class="fa fa-telegram"></i><span>Telegram<br><small>+2349049475905</small></span>
+    </a>
+</div>
 <div id=preloader>
     <div class="row loader">
         <div class=loader-icon></div>
